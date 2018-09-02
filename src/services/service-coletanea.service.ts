@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Coletanea } from '../models/coletanea';
-import { Observable, Subject } from '../../node_modules/rxjs';
-import  '../../node_modules/rxjs/operators';
-import { map } from 'rxjs/operators';
+import { Observable, Subject } from 'rxjs';
+import  'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
