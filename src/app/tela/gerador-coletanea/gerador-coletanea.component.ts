@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Coletanea } from '../../../models/coletanea';
 import { ServiceColetanea } from '../../../services/service-coletanea.service';
-import { Observable } from '../../../../node_modules/rxjs';
-import  '../../../../node_modules/rxjs/operators';
+import { Observable } from 'rxjs';
+import  'rxjs/operators';
 
 @Component({
   selector: 'app-gerador-coletanea',
