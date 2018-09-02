@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Coletanea } from '../../../models/coletanea';
+import { ServiceColetanea } from '../../../services/service-coletanea.service';
+import { Observable } from '../../../../node_modules/rxjs';
+import  '../../../../node_modules/rxjs/operators';
 
 @Component({
   selector: 'app-gerador-coletanea',
@@ -7,9 +11,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GeradorColetaneaComponent implements OnInit {
 
-  constructor() { }
-
+  coletanea:Coletanea
+  constructor(private coletaneaServ : ServiceColetanea) { }
+  //  coletanea : Coletanea
   ngOnInit() {
+    this.coletaneaServ.buscarColetanea().subscribe(t => {
+     this.coletanea = t
+    },error => console.log("erro ao buscar coletanea"),() => {
+    
+    })
   }
-
+  buscarColetanea(){
+    
+  }
+  //  AtulizarColetanea(coletanea:Coletanea){
+  //  this.coletanea = coletanea
+  //  }
 }
