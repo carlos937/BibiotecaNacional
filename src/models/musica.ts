@@ -1,4 +1,4 @@
 export class Musica {
-    tituloDaMusica:string
+    tituloMusica:string
     letra:string 
 }
