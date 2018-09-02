@@ -1,0 +1,14 @@
+.geradorDeColetanea{
+    position: fixed;
+    top: 0;
+    padding:10px 1% 10px;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: #007bff;;
+}
+.folha{
+    background: #fff;
+    border-radius: 5px;
+    height: 100%;
+}
